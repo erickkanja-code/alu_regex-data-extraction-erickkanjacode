@@ -23,7 +23,15 @@ let number3 = "123.456.7890";
 
 let numberRegex = /^(\(\d{3}\)\s|\d{3}[-.])\d{3}[-.]\d{4}$/;
 
-console.log(number1.match(numberRegex))
-console.log(number2.match(numberRegex))
-console.log(number3.match(numberRegex))
+console.log(number1.match(numberRegex));
+console.log(number2.match(numberRegex));
+console.log(number3.match(numberRegex));
 
+//Credit Card Number Validation
+let card1 = "1234 5678 9012 3456";
+let card2 = "1234-5678-9012-3456";
+
+let cardRegex = /^(\d{4}[- ]?){3}\d{4}$/;
+
+console.log(card1.match(cardRegex));
+console.log(card2.match(cardRegex));
